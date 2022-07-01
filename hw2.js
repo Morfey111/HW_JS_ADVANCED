@@ -36,16 +36,14 @@ function studentMakerTwo(firstName, secondName, addres) {
 
   let _newFirstName;
 
-  (newStudent.setNewName = -_newFirstName),
-    (newStudent.secondName = secondName),
-    (newStudent.addres = addres);
+    // newStudent.setNewName = -_newFirstName,
+    newStudent.secondName = secondName,
+    newStudent.addres = addres;
+    
 
-  return {
-    newStudent,
-  };
 }
 
-newStudent.setNewName = function (newName) {
+ newStudent.setNewName = function (newName) {
   _newFirstName = newName;
   console.log(`the name is changed...`);
 };
