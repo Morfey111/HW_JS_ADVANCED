@@ -25,7 +25,7 @@ Manager.prototype = Object.create(Person.prototype);
 /* -------------------------- Developer constructor ------------------------- */
 function Developer(name, age, skillset) {
   // reuse Person constructor
-  Person(this, name, age);
+  Person.call(this, name, age);
   this.skillset = skillset;
   // your code here ...
 }
