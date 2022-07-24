@@ -76,15 +76,22 @@
 
 // Create cityNames, containing only city names which population is greater than 340_000
 
-let cities = [
-	{name: 'Sofia', population: 1_236_000},
-	{name: 'Plovdiv', population: 343_424 },
-	{name: 'Burgas', population: 202_766},
-	{name: 'Varna', population: 335_177},
-];
+// let cities = [
+// 	{name: 'Sofia', population: 1_236_000},
+// 	{name: 'Plovdiv', population: 343_424 },
+// 	{name: 'Burgas', population: 202_766},
+// 	{name: 'Varna', population: 335_177},
+// ];
 
-let bigCities = cities.filter( city => city.population > 340000).map(city=> city.name)
+// let bigCities = cities.filter( city => city.population > 340000).map(city=> city.name)
 
-console.log(bigCities)
+// console.log(bigCities)
 
 
+let arrNums  = [1, 2, 3, 4,];
+
+let reduceNums = arrNums.filter(el => el % 2 === 0).reduce((acc, curr)=>{
+  return acc + curr
+})
+
+console.log(reduceNums);
